@@ -1,0 +1,32 @@
+* {
+    background-color: rgb(226, 238, 243);
+    /* border: 1px solid black; */
+}
+.but {
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: right;
+    
+}
+.end {
+    background-color: black;
+    color: white;
+    height: 150px;
+
+}
+.pic {
+    background-color: white;
+}
+.img {
+    width: 100px;
+    height: 100px; 
+    border-radius: 70%;
+    list-style: none;
+    margin-left: 20px;
+}
+button {
+    background-color: rgb(69, 69, 240);
+    color: white;
+    margin: 0px 3px 0px 3px;
+
+}

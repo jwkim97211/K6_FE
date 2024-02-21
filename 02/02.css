@@ -1,0 +1,75 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+main {
+    width: 60%; /*전체의 60%를 너비로*/
+    background-color: lightblue;
+    margin-left: 20%; /*너비가 60%이기 때문에 왼쪽에 20%를 주면 중앙으로 20%/60%/20%*/
+}
+section {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+header>h1 {
+    text-align: center;
+}
+nav>ul {  /*li를 싸고 있는 ul에서 flex적용*/
+    display: flex;
+    flex-wrap: wrap;       /*페이지 크기를 줄이면 자동줄바꿈*/
+    margin: 20px;
+    padding: 10px;
+    list-style: none; /*ul에 있는 점을 뺌*/
+    justify-content: right;
+}
+nav>ul>li {  /*nav li와 동일(nav 밑에 있는 태그 중 li를 찾음*/
+    margin: 5px;
+    padding: 10px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 5px; /*모서리를 동그랗게*/
+}
+article {
+    padding: 20px;
+}
+article p {
+    margin-top: 20px;
+}
+section div {
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+}
+section p {
+    margin-left: 20px ;
+}
+img {
+    border-radius: 50%;
+}
+footer ul {
+    list-style: none;
+    padding: 40px;
+}
+footer {
+    background-color: black;
+    color: white;
+}
+nav a {
+    text-decoration: none;  /*하이퍼링크 지정 시 밑줄과 단어 색 파랑, 밑줄 삭제*/
+    color: white;
+}
+nav li:hover {
+    background-color: red; /*마우스가 갔을 때*/
+}
+@media only screen and (max-width: 768px) { /*768px보다 작아지면 밑에 코드를 적용*/
+    main {
+        width: 60%;
+        background-color: yellow;
+    }
+    header h1 {
+        font-size: small;
+        color: white;
+      }
+  }
+ 

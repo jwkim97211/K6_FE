@@ -1,0 +1,19 @@
+button {
+    width: 100px;
+    height: 40px;
+    background-color: lightgreen;
+    color: white;
+    border: 0px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: greenyellow;
+    color: white;
+    cursor: pointer;  /*커서가 가면 마우스모양 바뀜*/
+}
+h2 {
+    font-size: medium;
+    color: blue;
+}

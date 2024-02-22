@@ -1,0 +1,36 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+main {
+    width: 60%;
+    margin-left: 20px;
+}
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;  /*중간으로*/
+    padding: 0px 20px 0px 20px; /*0px 20px과 동일*/
+}
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+article ul{
+    width: 80%;   /*main에서 준 60%의 70%*/
+    background-color: beige;
+    list-style: none;
+}
+article li {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    border: 1px dotted gray;
+    padding: 10px;
+}

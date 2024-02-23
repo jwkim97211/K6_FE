@@ -1,0 +1,13 @@
+button {
+    height: 40px;
+    background-color: rgb(102, 176, 201);
+    color: white;
+    border: 0px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+section img {
+    width: 100px;
+    margin: 5px;
+}

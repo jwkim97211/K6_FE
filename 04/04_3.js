@@ -30,15 +30,13 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 const handleClick = ()=>{
     const n1= Math.floor(Math.random()*6)+1;
-    console.log("click",5) //개발자모드(console)에서 클릭을 누를 때 마다 1~6출력
+    //console.log("click",n1) 개발자모드(console)에서 클릭을 누를 때 마다 1~6출력
     const img1 = document.querySelector("#img1"); //class가 img인 것을 가져온다
     img1.setAttribute("src",`/04/img/${n1}.png`);
     const n2= Math.floor(Math.random()*6)+1;
-    console.log("click",5)
     const img2 = document.querySelector("#img2");
     img2.setAttribute("src",`/04/img/${n2}.png`);
     const n3= Math.floor(Math.random()*6)+1;
-    console.log("click",5)
     const img3 = document.querySelector("#img3");
     img3.setAttribute("src",`/04/img/${n3}.png`);
 }

@@ -8,7 +8,7 @@ button {
     padding: 10px;
     border-radius: 5px;
 }
-button:hover {
+button:hover, #butArea2 button:hover {
     background-color: greenyellow;
     color: white;
     cursor: pointer;  /*커서가 가면 마우스모양 바뀜*/
@@ -16,4 +16,10 @@ button:hover {
 h2 {
     font-size: medium;
     color: blue;
+}
+#bt4 {
+    background-color: green;
+}
+#bt3 {
+    background-color: rgb(35, 184, 42);
 }

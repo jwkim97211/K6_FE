@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>주사위 3개 굴리기</title>
+    <title>주사위 2개 굴리기</title>
     <link rel="stylesheet" href="../index.css">
-    <link rel="stylesheet" href="./04.css">
-    <script src="./04_3.js"></script>
+    <link rel="stylesheet" href="./06.css">
+    <script src="./06.js"></script>
 </head>
 
 <body>
@@ -18,14 +19,21 @@
             </div>
         </header>
         <section>
-            <h1>자바스크립트 주사위 만들기</h1>
+            <h1>주사위 게임</h1>
             <div>
                 <img src="/04/img/1.png" id="img1" alt="">
                 <img src="/04/img/1.png" id="img2" alt="">
-                <img src="/04/img/1.png" id="img3" alt="">
             </div>
             <div>
-                <button id="but1">주사위를 던져주세요.</button>
+                <button onclick="handleClick(1)">1</button>
+                <button onclick="handleClick(2)">2</button>
+                <button onclick="handleClick(3)">3</button>
+                <button onclick="handleClick(4)">4</button>
+                <button onclick="handleClick(5)">5</button>
+                <button onclick="handleClick(6)">6</button>
+            </div>
+            <div id="msg">
+
             </div>
         </section>
     </main>

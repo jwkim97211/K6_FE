@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", ()=>{
-    console.log("Click");
     const but1 = document.querySelector("#but1");
  
     but1.addEventListener("click", ()=>{

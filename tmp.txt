@@ -1,0 +1,20 @@
+<body>
+    <main>
+        <header>
+            <H1>K-digital 6기 자바 스크립트</H1>
+            <div>
+                <a href="/index.html">홈</a>
+            </div>
+        </header>
+        <section>
+            <h1></h1>
+            <div>
+
+            </div>
+            <div>
+            </div>
+            <div>
+            </div>
+        </section>
+    </main>
+</body>

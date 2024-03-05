@@ -8,22 +8,29 @@ button {
     padding: 10px;
     border-radius: 5px;
 }
+
 input[type=number] {
     display: inline-flex;
-    width: 40%; 
-    height: 40px; 
-  }
+    width: 40%;
+    height: 40px;
+    text-align: center;
+}
+
 section>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 #msg {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 span {
     color: red;
+    font-weight: bold;
+    
 }

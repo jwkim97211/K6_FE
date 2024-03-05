@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const imgs = document.querySelectorAll("section img");
     const bts = document.querySelectorAll("section button");
+    
 
     for (let bt of bts) {
 

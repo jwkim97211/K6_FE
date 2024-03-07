@@ -76,7 +76,84 @@ for (let c of Object.entries(obj)) {
     console.log("오브젝트 :", c[1])
 }
 console.log("오브젝트 구조분해")
-for (let [k,v] of Object.entries(obj)) {
+for (let [k,v] of Object.entries(obj)) {        //[?,!] ?는 key자리, !는 value자리 고정
     console.log("오브젝트 :", k)
     console.log("오브젝트 :", v)
 }
+//오브젝트 key배열
+console.log("오브젝트 키배열 :",Object.keys(obj))
+
+//오브젝트 value배열
+console.log("오브젝트 키배열 :",Object.values(obj))
+
+//배열과 오브젝트의 차이
+//배열은 index를 이용해서 검색을 하지만
+//오브젝트는 key를 이용해서 검색
+//자바스크립트에서 배열은 파이썬의 List
+//자바스크립트에서 오브젝트는 파이썬의 Dictionary
+
+let arr5;
+console.log("arr5 :",arr5);
+//변수만 정의했을 때 결과 : arr5 : undefined
+
+//for of문 사용한 경우(index사용 안함)
+let arr6=[];
+for(let item of arr) {
+    arr6.push(item);
+    }
+console.log("arr6 :",arr)
+
+//for in문 사용한 경우(index사용 안함)
+let arr7=[];
+for(let i in arr) {
+    arr7.push(arr[i]);
+    }
+console.log("arr7 :",arr7)
+
+//반복문에서 index를 사용한 경우
+let arr8=[0,0,0,0,0,0];
+for(let i in arr) {
+    arr8[i]=arr[i]
+}
+console.log("arr8 :",arr8)
+
+//map함수 사용(파라미터가 1개인 경우만 가능)  파라미터가 2개인 경우에는 괄호 생략 불가능
+arr9 = arr.map(v=>v);
+console.log("arr9 :",arr9)
+
+//map함수 사용(return 무조건 필요)
+arr10 = arr.map((v)=>{
+     return v;
+});
+console.log("arr10 :",arr10);
+
+//filter(true값만 출력)
+let arr21=[];
+for(let item of arr) {
+    if(isNaN(item))     //값이 숫자면 false반환(문자열은 true)
+    arr21.push(item)
+}
+console.log("arr21 :",arr21);
+
+let arr22=[];
+for(let item of arr) {
+    if(!isNaN(item))
+    arr22.push(item)
+}
+console.log("arr22 :",arr22);
+
+arr23=arr.filter((v)=>{
+    if(isNaN(v))
+    return isNaN(v)
+})
+console.log("arr23 :",arr23)
+
+arr24=arr.filter((v)=>isNaN(v))
+console.log("arr24 :",arr24);
+
+//map,filter는 배열에서만 사용가능(오브젝트는 사용불가)
+//오브젝트를 배열로 만들어서 사용해야함
+
+//전개연산자
+let arr25 = [...arr];
+console.log("전개연산자 :",arr25);
